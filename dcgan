@@ -1,7 +1,9 @@
 !pip install -q tensorflow-gpu==2.0.0-rc1
+import tensorflow as tf
+tf.__version__
+
 !pip install -q imageio
 
-import tensorflow as tf
 import glob
 import imageio
 import matplotlib.pyplot as plt
@@ -159,6 +161,7 @@ def generate_and_save_images(model, epoch, test_input):
   
 
 # model training
+%%time
 train(train_dataset, EPOCHS) 
 
 
