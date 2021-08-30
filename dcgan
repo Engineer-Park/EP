@@ -159,7 +159,6 @@ def generate_and_save_images(model, epoch, test_input):
   
 
 # model training
-%%time
 train(train_dataset, EPOCHS) 
 
 
